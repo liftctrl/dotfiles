@@ -180,30 +180,31 @@ bindsym $mod+r mode "resize"
 
 bar {
 	status_command i3status -c $HOME/.config/i3/i3status.conf
+  # status_command i3blocks -c $HOME/.config/i3blocks/i3blocks.conf
 	font pango:JetBrainsMonoNerdFont SemiBold 10
 	separator_symbol " "
-  	position top
-    	colors {
-      		background         #1e1e2e
-      		statusline         #cdd6f4
-      		focused_statusline #cdd6f4
-      		focused_separator  #1e1e2e
+  # position top
+  colors {
+    background         #24273a
+    statusline         #cad3f5
+    focused_statusline #cad3f5
+    focused_separator  #24273a
 
-      		# target           border   bg        text
-      		focused_workspace  #1e1e2e  #cba6f7   #11111b
-      		active_workspace   #1e1e2e  #585b70   #cdd6f4
-      		inactive_workspace #1e1e2e  #1e1e2e   #cdd6f4
-      		urgent_workspace   #1e1e2e  #f38ba8   #11111b
-  	}
+    # target           border   bg        text
+    focused_workspace  #24273a  #c6a0f6   #181926
+    active_workspace   #24273a  #5b6078   #cad3f5
+    inactive_workspace #24273a  #24273a   #cad3f5
+    urgent_workspace   #24273a  #ed8796   #181926
+  }
 }
 
-# target                 title     bg       text     indicator  border
-client.focused           #b4befe   #1e1e2e  #cdd6f4  #6c7086    #b4befe
-client.focused_inactive  #6c7086   #1e1e2e  #cdd6f4  #6c7086    #6c7086
-client.unfocused         #6c7086   #1e1e2e  #cdd6f4  #6c7086    #6c7086
-client.urgent            #fab387   #1e1e2e  #fab387  #6c7086    #fab387
-client.placeholder       #6c7086   #1e1e2e  #cdd6f4  #6c7086    #6c7086
-client.background        #1e1e2e
+# target                 title   bg      text     indicator  border
+client.focused           #b7bdf8 #24273a #cad3f5  #f4dbd6    #b7bdf8
+client.focused_inactive  #6e738d #24273a #cad3f5  #f4dbd6    #6e738d
+client.unfocused         #6e738d #24273a #cad3f5  #f4dbd6    #6e738d
+client.urgent            #f5a97f #24273a #f5a97f  #6e738d    #f5a97f
+client.placeholder       #6e738d #24273a #cad3f5  #6e738d    #6e738d
+client.background        #24273a
 
 # The same as default_border none
 default_border pixel 0
@@ -212,4 +213,10 @@ default_border pixel 0
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf
 
 # feh
-exec_always --no-startup-id feh --bg-scale $HOME/Wallpapers/1.png
+exec_always --no-startup-id feh --bg-scale $HOME/Wallpapers/archlinux.png
+
+# redshift
+exec --no-startup-id redshift
+
+# i3lock
+bindsym $mod+x exec i3lock -c 000000
