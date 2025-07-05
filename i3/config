@@ -213,7 +213,7 @@ default_border pixel 0
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf
 
 # feh
-exec_always --no-startup-id feh --bg-scale $HOME/Wallpapers/archlinux.png
+exec_always --no-startup-id feh --bg-scale $HOME/Pictures/archlinux.png
 
 # redshift
 exec --no-startup-id redshift
