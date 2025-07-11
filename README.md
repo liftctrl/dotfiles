@@ -8,11 +8,9 @@
 - picom
 - feh
 - nerd-fonts
-- starship
-- eza
 
 ```bash
-sudo pacman -S alacritty rofi ranger picom feh nerd-fonts starship eza
+sudo pacman -S alacritty rofi ranger picom feh nerd-fonts
 ```
 ```bash
 yay -S catppuccin-gtk-theme-macchiato
