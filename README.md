@@ -45,8 +45,8 @@ Use a tool like `lxappearance` or `gnome-tweaks` to select the Catppuccin Macchi
 
 3. You're ready to go:
 
-- Mod + Enter → launch terminal
-- Mod + D → open Rofi
-- nvim → open editor
-- picom & → enable transparency
-- redshift → adjust screen color temperature
+- `Mod + Enter` → launch terminal
+- `Mod + D` → open Rofi
+- `nvim` → open editor
+- `picom &` → enable transparency
+- `redshift` → adjust screen color temperature
