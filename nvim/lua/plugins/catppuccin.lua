@@ -10,7 +10,7 @@ return {
     end,
 
     config = function()
-      require("config.catppuccin")
+      require("configs.catppuccin")
     end,
   }
 }

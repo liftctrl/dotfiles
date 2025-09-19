@@ -7,7 +7,8 @@ return {
       "williamboman/mason-lspconfig.nvim",
     },
     config = function()
-      require("config.lsp")()
+      require("lsp.mason")()
+      require("lsp.servers")()
     end,
   }
 }

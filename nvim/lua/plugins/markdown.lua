@@ -6,7 +6,7 @@ return {
     },
     ft = { "markdown", "vimwiki" },
     config = function()
-      require("config.markdown")
+      require("configs.markdown")
     end,
   },
 }
