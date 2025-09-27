@@ -1,0 +1,9 @@
+### ---- Optimized Bash History ---- ###
+export HISTSIZE=5000
+export HISTFILESIZE=20000
+export HISTCONTROL=ignoreboth
+export HISTIGNORE="ls:cd:pwd:exit:clear:history"
+export HISTTIMEFORMAT="%F %T "
+shopt -s histappend
+PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
+
