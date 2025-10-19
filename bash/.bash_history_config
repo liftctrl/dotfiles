@@ -1,0 +1,7 @@
+export HISTSIZE=50
+export HISTFILESIZE=100
+export HISTCONTROL=ignoreboth
+export HISTIGNORE="ls:cd:pwd:exit:clear:history"
+export HISTTIMEFORMAT="%F %T "
+shopt -s histappend
+PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
