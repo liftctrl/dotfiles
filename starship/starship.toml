@@ -1,0 +1,85 @@
+##############################################
+# Prompt Layout - Two Lines
+##############################################
+
+format = """\
+$directory$git_branch$git_status$nodejs$python$rust$java$deno$bun$docker_context$fill$time
+$character\
+"""
+
+[fill]
+symbol = " "
+
+##############################################
+# Directory & Git Info
+##############################################
+
+[directory]
+truncation_length = 1
+style = "bold #cba6f7"  # Lavender
+
+[git_branch]
+format = " on [$branch](bold #f2cdcd)"  # Flamingo
+
+[git_status]
+format = " [$all_status]($style)"
+style = "bold #f28fad"  # Maroon
+
+##############################################
+# Languages
+##############################################
+
+[nodejs]
+format = " via [⬢ $version](bold #94e2d5)"  # Teal
+
+[python]
+format = " via [🐍 $version](bold #89b4fa)"  # Blue
+
+[rust]
+format = " via [🦀 $version](bold #f38ba8)"  # Red-Pink
+
+[java]
+format = " via [☕ $version](bold #fab387)"  # Peach
+
+##############################################
+# Docker
+##############################################
+
+[docker_context]
+format = " in [🐳 $context](bold #89b4fa)"  # Blue
+only_with_files = false
+
+##############################################
+# Time (Right Aligned)
+##############################################
+
+[time]
+disabled = false
+time_format = "%H:%M:%S"
+style = "bold #b4befe"  # Lavender - soft, visible, non-intrusive
+format = "[$time]($style)"
+
+##############################################
+# ➤ Prompt Symbol
+##############################################
+
+[character]
+success_symbol = "[❯](bold #a6e3a1)"  # Green
+error_symbol = "[✗](bold #f38ba8)"    # Red
+vicmd_symbol = "[V](bold #f9e2af)"    # Yellow
+
+##############################################
+# Disable Unused Modules
+##############################################
+
+[username]
+disabled = true
+
+[hostname]
+disabled = true
+
+[cmd_duration]
+disabled = true
+
+[package]
+disabled = true
