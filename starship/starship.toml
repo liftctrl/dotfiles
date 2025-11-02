@@ -1,5 +1,5 @@
 ##############################################
-# Prompt Layout - Two Lines
+# 🧭 Prompt Layout - Two Lines
 ##############################################
 
 format = """\
@@ -11,7 +11,7 @@ $character\
 symbol = " "
 
 ##############################################
-# Directory & Git Info
+# 📁 Directory & Git Info
 ##############################################
 
 [directory]
@@ -26,7 +26,7 @@ format = " [$all_status]($style)"
 style = "bold #f28fad"  # Maroon
 
 ##############################################
-# Languages
+# 🧠 Languages
 ##############################################
 
 [nodejs]
@@ -42,24 +42,6 @@ format = " via [🦀 $version](bold #f38ba8)"  # Red-Pink
 format = " via [☕ $version](bold #fab387)"  # Peach
 
 ##############################################
-# Docker
-##############################################
-
-[docker_context]
-format = " in [🐳 $context](bold #89b4fa)"  # Blue
-only_with_files = false
-
-##############################################
-# Time (Right Aligned)
-##############################################
-
-[time]
-disabled = false
-time_format = "%H:%M:%S"
-style = "bold #b4befe"  # Lavender - soft, visible, non-intrusive
-format = "[$time]($style)"
-
-##############################################
 # ➤ Prompt Symbol
 ##############################################
 
@@ -69,7 +51,7 @@ error_symbol = "[✗](bold #f38ba8)"    # Red
 vicmd_symbol = "[V](bold #f9e2af)"    # Yellow
 
 ##############################################
-# Disable Unused Modules
+# 🚫 Disable Unused Modules
 ##############################################
 
 [username]
