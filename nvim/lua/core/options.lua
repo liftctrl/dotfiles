@@ -1,4 +1,4 @@
--- Line numbers
+--- Line numbers
 vim.opt.number = true        -- show absolute line numbers
 vim.opt.relativenumber = true -- show relative line numbers
 
@@ -20,14 +20,9 @@ vim.opt.softtabstop = 4       -- editing behaves like 4 spaces
 vim.opt.autoindent = true     -- copy indent from previous line
 vim.opt.smartindent = true    -- smart autoindent
 
--- Clipboard, Mouse, and Undo
-vim.opt.clipboard = "unnamedplus"  -- use system clipboard
-vim.opt.mouse = "a"                 -- enable mouse in all modes
-vim.opt.undofile = true
-
 -- Appearance
 vim.opt.signcolumn = "yes"     -- always show sign column
-vim.opt.showmode = false        -- hide --INSERT-- text
+vim.opt.showmode = "yes"        -- hide --INSERT-- text
 vim.opt.showcmd = true          -- show incomplete command in bottom
 
 -- Performance and Misc
