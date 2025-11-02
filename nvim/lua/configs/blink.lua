@@ -1,13 +1,19 @@
 return function()
   require("blink.cmp").setup({
     keymap = {
-      preset = "default", 
+      preset = "enter", 
     },
     appearance = {
       nerd_font_variant = "mono",
     },
     completion = {
-      documentation = { auto_show = false },
+      accept = { 
+	auto_brackets = { enabled = true },
+      },
+      documentation = { 
+	auto_show = false, 
+	auto_show_delay_ms = 250,
+      },
     },
     sources = {
       default = { "lsp", "path", "buffer" },
