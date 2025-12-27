@@ -206,6 +206,7 @@ bindsym $mod+r mode "resize"
 bar {
     position top
     font pango:JetBrainsMonoNerdFont SemiBold 10
+    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
     position top
     colors {
         background         #24273a
