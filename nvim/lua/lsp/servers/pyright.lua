@@ -1,6 +1,4 @@
 return function()
-  vim.lsp.config('pyright', {
-    capabilities = vim.lsp.protocol.make_client_capabilities(),
-  })
+  vim.lsp.config('pyright', { })
   vim.lsp.enable('pyright')
 end
