@@ -4,7 +4,7 @@ return {
     lazy = false,
     dependencies = { "kyazdani42/nvim-web-devicons" },
     config = function()
-      require("configs.lualine")()
+      require("config.lualine")()
     end,
   }
 }

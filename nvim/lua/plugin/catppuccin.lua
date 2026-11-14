@@ -6,7 +6,7 @@ return {
     lazy = false,
     config = function()
       vim.cmd.colorscheme("catppuccin-macchiato")
-      require("configs.catppuccin")
+      require("config.catppuccin")
     end,
   }
 }
